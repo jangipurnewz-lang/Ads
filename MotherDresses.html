@@ -1,131 +1,83 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- সার্চ ইঞ্জিন বন্ধ রাখার ট্যাগ -->
-  <meta name="robots" content="noindex, nofollow">
-  
-  <title>মাদার ড্রেসেস</title>
-
-  <!-- Kalpurush (কালপুরুষ) ফন্ট যুক্ত করা হলো -->
-  <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Kalpurush', 'Segoe UI', Arial, sans-serif;
-      background-color: #f4f7f6;
-      margin: 0;
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .card {
-      background: #ffffff;
-      max-width: 450px;
-      width: 100%;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      border-top: 5px solid #d90429;
-      text-align: center;
-      animation: fadeIn 0.8s ease-in-out;
-    }
-    .store-name {
-      color: #d90429;
-      font-size: 28px;
-      margin: 0 0 5px 0;
-      font-weight: bold;
-    }
-    .owner-name {
-      color: #555;
-      font-size: 16px;
-      margin-bottom: 20px;
-      font-weight: 500;
-      border-bottom: 1px dashed #ccc;
-      padding-bottom: 10px;
-    }
-    .ad-image {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-    .description {
-      color: #333;
-      font-size: 18px;
-      line-height: 1.6;
-      background: #fff0f3;
-      padding: 12px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      font-weight: 500;
-    }
-    .info-box {
-      text-align: left;
-      background: #f8f9fa;
-      padding: 15px;
-      border-radius: 8px;
-      border-left: 4px solid #0077b6;
-    }
-    .info-item {
-      font-size: 16px;
-      color: #444;
-      margin-bottom: 8px;
-    }
-    .info-item:last-child {
-      margin-bottom: 0;
-    }
-    .call-btn {
-      display: block;
-      width: 100%;
-      background: #25d366;
-      color: white;
-      text-decoration: none;
-      padding: 12px 0;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 17px;
-      margin-top: 15px;
-      text-align: center;
-      transition: background 0.3s;
-    }
-    .call-btn:hover {
-      background: #1eb857;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(15px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>মাদার ড্রেসেস</title>
+<link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{
+    font-family:'Kalpurush','Segoe UI',Arial,sans-serif;
+    margin:0;padding:20px;min-height:100vh;
+    display:flex;justify-content:center;align-items:center;
+    background:linear-gradient(180deg,#eaf3fb 0%,#dbe9f5 100%);
+  }
+  .card{
+    max-width:440px;width:100%;
+    background:#ffffff;
+    border-radius:18px;
+    padding:0 0 26px;
+    text-align:center;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(23,64,105,0.12);
+  }
+  .header-band{
+    background:#134e73;
+    padding:26px 20px 34px;
+    position:relative;
+  }
+  .header-band::after{
+    content:"";position:absolute;left:0;right:0;bottom:-1px;height:28px;
+    background:#ffffff;
+    border-radius:50% 50% 0 0 / 100% 100% 0 0;
+  }
+  .store-name{color:#ffffff;font-size:29px;margin:0 0 6px;font-weight:bold}
+  .owner-name{color:#bcd7ea;font-size:14px}
+  .ad-image{
+    width:calc(100% - 48px);
+    max-width:260px;
+    height:auto;
+    display:block;
+    margin:4px auto 18px;
+    border-radius:12px;
+  }
+  .description{
+    color:#1c3d52;font-size:17px;line-height:1.7;
+    margin:6px 24px 20px;
+  }
+  .info-box{
+    text-align:left;background:#f3f8fb;
+    margin:0 24px 0;padding:16px 18px;border-radius:12px;
+  }
+  .info-item{font-size:15px;color:#2a4a5f;margin-bottom:8px}
+  .info-item:last-child{margin-bottom:0}
+  .info-item strong{color:#134e73}
+  .call-btn{
+    display:block;width:calc(100% - 48px);margin:20px auto 0;
+    background:#1a936f;color:#fff;text-decoration:none;
+    padding:13px 0;border-radius:12px;font-weight:bold;font-size:16px;
+    transition:background 0.25s;
+  }
+  .call-btn:hover{background:#157a5c}
+</style>
 </head>
 <body>
-
   <div class="card">
-    <h1 class="store-name">মাদার ড্রেসেস</h1>
-    <div class="owner-name">প্রোঃ মোঃ মুর্শেদ আলি</div>
-
-    <!-- ছবির লিঙ্ক থাকলে নিচের লাইনটির কমেন্ট তুলে দেবেন -->
-    <!-- <img class="ad-image" src="আপনার_ছবির_লিঙ্ক.jpg" alt="মাদার ড্রেসেস"> -->
-
-    <div class="description">
-      এখানে সকল প্রকার রেডিমেড এবং শীতবস্ত্র পাওয়া যায়।
+    <div class="header-band">
+      <div class="store-name">মাদার ড্রেসেস</div>
+      <div class="owner-name">প্রোঃ মোঃ মুর্শেদ আলি</div>
     </div>
 
+    <img class="ad-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKZwxLHgBXQBpLl8fuqH6Gsv4rDoKFARYn4O18dMI4R5Em1jnLxqk3Vi0d0Z9_ojFkzPaOc_oBceMHvjRobcTsSMB45lWaGn6Liwgz5Ti1oQBgojqQepD5STBjZ2B0r_JIa0L7hKxeZQaX5h4B2bfwHYE3wVOabEwG8IlDGgpxAQ8Fkle9Mq95rwlB_4G5/s320/337131.png" alt="মাদার ড্রেসেস">
+
+    <div class="description">এখানে সকল প্রকার রেডিমেড এবং শীতবস্ত্র পাওয়া যায়।</div>
     <div class="info-box">
       <div class="info-item"><strong>ঠিকানা:</strong> গোফুরপুর বেলচাত্রা, জঙ্গীপুর, মুর্শিদাবাদ।</div>
       <div class="info-item"><strong>যোগাযোগ:</strong> ৮১৪৫৯০৫৬১৪</div>
     </div>
-
     <a href="tel:8145905614" class="call-btn">📞 কল করুন (8145905614)</a>
   </div>
-
 </body>
 </html>
